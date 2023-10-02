@@ -29,8 +29,8 @@
             <h1 class="h1-project">Tambah Projek Saya</h1>
         </div>
 
-        <form onsubmit="save()" action="#" enctype="multipart/form-data">
-            <!-- <form onsubmit="submitData(event)"> -->
+        <!-- <form onsubmit="save()" action="#" enctype="multipart/form-data"> -->
+        <form onsubmit="submitData(event)" autocomplete="off">
             <div>
                 <label for="project_name">Project Name:</label><br>
                 <input class="form-input" type="text" id="project_name" name="project_name">
@@ -85,33 +85,35 @@
             </div>
         </form>
 
-        <hr class="line" />
+        <hr class="line"/>
         <div>
             <h1 class="h1-project">Projek Saya</h1>
         </div>
 
-        <div class="div-card" id="contents">
-            <img src="./assets/image/me.jpeg" alt="Rian" class="img-card"/>
-            <h1 class="h1-card">
-                Project Name
-            </h1>
-            <p class="p-card">
-                Start - End</p>
+        <div class="div-card-item" id="contents">
+            <div class="div-card">
+                <img src="./assets/image/me.jpeg" alt="Rian" class="img-card"/>
+                <h1 class="h1-card">
+                    Project Name
+                </h1>
+                <p class="p-card">
+                    Start - End</p>
 
-            <table class="table-card">
-                <tr>
-                    <th class="th-card">Deskripsi</th>
-                    <th class="th-card">Technology</th>
-                </tr>
-                <tr>
-                    <td class="td-card">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nulla debitis,
-                        laudantium dolorem magni consequatur facere unde assumenda ipsam officiis nobis.
-                        Eaque corrupti at eligendi itaque aliquam soluta? Itaque, sed!</td>
-                    <td class="td-card">Node JS</td>
-                </tr>
-            </table>
+                <table class="table-card">
+                    <tr>
+                        <th class="th-card">Deskripsi</th>
+                        <th class="th-card">Technology</th>
+                    </tr>
+                    <tr>
+                        <td class="td-card">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nulla debitis,
+                            laudantium dolorem magni consequatur facere unde assumenda ipsam officiis nobis.
+                            Eaque corrupti at eligendi itaque aliquam soluta? Itaque, sed!</td>
+                        <td class="td-card">Node JS</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <script src="./assets/js/blog.js"></script>
     </body>
-</html> 
+</html>

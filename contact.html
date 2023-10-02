@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> Batch 50 </title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <img src="./assets/image/daun.png" alt="logo">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./myproject.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="./contact.html">Kontak Saya</a>
+            </div>
+        </nav>
+
+        <!-- End Navbar -->
+        <form action="">
+        <div>
+            <label for="nama">Name:</label><br>
+            <input type="text" id="nama">
+        </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email">
+        </div>
+        
+        <div>
+            <label for="phone">Nomor Hanphone:</label><br>
+            <input type="text" id="phone">
+        </div>
+
+        <div>
+            <label for="pilih">Pilih Dulu</label><br>
+            <select id="pilih">
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Fullstack Develope">Fullstack Develope</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan"></textarea>
+        </div>
+
+        <div>
+            <br><button class="button" onclick="getData()"> Kirim </button>
+        </div>
+      </form>
+      <script src="./assets/js/blog.js"></script>
+    </body>
+</html>

@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
+        <!-- START NAVBAR -->
         <nav>
             <div class="nav-left">
                 <ul>
@@ -20,16 +21,17 @@
                 </ul>
             </div>
             <div class="nav-right">
-                <a href="./contact.html">Kontak Saya</a>
+                <a href="./contact.html">My Contact</a>
             </div>
         </nav>
         <!-- End Navbar -->
 
+        <!-- START FORM -->
         <div>
-            <h1 class="h1-project">Tambah Projek Saya</h1>
+            <h1 class="h1-project">Add New Project</h1>
         </div>
 
-        <!-- <form onsubmit="save()" action="#" enctype="multipart/form-data"> -->
+        
         <form onsubmit="submitData(event)" autocomplete="off">
             <div>
                 <label for="project_name">Project Name:</label><br>
@@ -38,15 +40,24 @@
 
             <span class="span-startend">
                 <!-- <div class="input-start"> -->
-                <div class="div-start">
+                <div class="div-start" id="dateForm">
                     <label for="start_date">Start Date:</label><br>
-                    <input class="form-input" type="text" id="start_date" name="start_date">
+                    <input
+                        class="form-input"
+                        type="date"
+                        id="start_date"
+                        required="required"
+                        name="start_date">
                 </div>
                 <div>
                     <label for="end_date">End Date</label><br>
-                    <input class="form-input" type="text" id="end_date" name="end_date">
+                    <input
+                        class="form-input"
+                        type="date"
+                        id="end_date"
+                        required="required"
+                        name="end_date">
                 </div>
-                <!-- </div> -->
             </span>
 
             <div>
@@ -54,7 +65,6 @@
                 <textarea class="form-input" id="description" name="description"></textarea>
             </div>
 
-            <!-- <div> -->
             <fieldset>
                 <legend>Technologies</legend>
                 <div class="checkbox">
@@ -71,7 +81,6 @@
                     <label for="typescript">Typescript</label><br>
                 </div>
             </fieldset>
-            <!-- </div> -->
 
             <div>
                 <input type="file" id="input-blog-image" accept="image/*">
@@ -84,14 +93,33 @@
                 </button>
             </div>
         </form>
+        <!-- END FORM -->
 
+        <!-- CARD LINE -->
         <hr class="line"/>
         <div>
-            <h1 class="h1-project">Projek Saya</h1>
+            <h1 class="h1-project">My Project</h1>
         </div>
 
+        <!-- FILTERING -->
+        <div style="text-align: center">
+            <label for="filter_technology">Filter by technologies:</label>
+            <select
+                name="filter_technology"
+                id="filter_technology"
+                onchange="filterProjectBasedOnTechnology()">
+                <option value="all">All</option>
+                <option value="Node Js">Node JS</option>
+                <option value="Next Js">Next JS</option>
+                <option value="React Js">React JS</option>
+                <option value="Typescript">Typescript</option>
+            </select>
+        </div>
+
+        <!-- CARD -->
         <div class="div-card-item" id="contents">
-            <div class="div-card">
+
+            <!-- <div class="div-card">
                 <img src="./assets/image/me.jpeg" alt="Rian" class="img-card"/>
                 <h1 class="h1-card">
                     Project Name
@@ -112,7 +140,8 @@
                         <td class="td-card">Node JS</td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
+            
         </div>
         <script src="./assets/js/blog.js"></script>
     </body>

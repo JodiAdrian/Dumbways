@@ -114,7 +114,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 545px) {
+@media only screen and (max-width: 560px) {
     .a-respon {
         display: none;
     }

@@ -1,0 +1,48 @@
+/* HOME / NAVBAR */
+
+.navbar {
+    background-color: beige !important;
+}
+
+.jumbotron {
+    padding-top: 2rem;
+    background-color: #FFF2D8;
+}
+
+.icons {
+    font-size: 4rem;
+}
+
+.footer {
+    background-color: #113946;
+}
+
+
+/* ADD PROJECT */
+
+.bg-color {
+    background-color: #FFF2D8;
+}
+
+.date {
+    display: flex;
+}
+
+.cekbox {
+    grid-row-start: auto;
+}
+
+.filter {
+    background-color: #EAD7BB;
+    text-align: center
+}
+
+.container-card {
+    box-shadow: 0 0 30px #3d3d3d;
+    background-color: #fff;
+    border: ipx solid black;
+    justify-content: center;
+    text-align: center;
+}
+
+

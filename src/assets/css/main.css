@@ -20,8 +20,12 @@
 
 /* ADD PROJECT */
 
-.bg-color {
-    background-color: #FFF2D8;
+.bgcolor {
+    background-color: #F8F0E5;
+}
+
+#fcard {
+    background-color: #EADBC8
 }
 
 .date {
@@ -33,7 +37,6 @@
 }
 
 .filter {
-    background-color: #EAD7BB;
     text-align: center
 }
 
@@ -45,4 +48,17 @@
     text-align: center;
 }
 
+/* CONTACT */
+
+textarea {
+    resize: none;
+}
+
+/* TESTIMONI */
+
+.testimoni {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 

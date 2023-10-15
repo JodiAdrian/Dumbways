@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/main.css">
+    <title>My Testimoni</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar width">
+        <div class="container mt-2 mb-2">
+            <a class="navbar-brand me-3" href="/">
+                <img src="/image/daun.png" alt="logo">
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-3" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="/addproject">My Project</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="/mytestimoni">My Testimoni</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-outline-secondary" href="/contact">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- TESTIMONI -->
+    <div>
+        <div class="container text-center mt-5">
+            <h1>My Testimonials</h1>
+            <div class="text-center mt-3 mb-3">
+                <h2 class="mb-4">
+                    Rating By Star</h2>
+                <div class="mt-5">
+                    <button type="button" class="btn btn-outline-warning" onclick="showTestimonial()">
+                        All
+                    </button>
+                    <button type="button" class="btn btn-outline-warning" onclick="filterTestimonials(1)">
+                        1
+                        <i class="fa-solid fa-star"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-warning" onclick="filterTestimonials(2)">
+                        2
+                        <i class="fa-solid fa-star"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-warning" onclick="filterTestimonials(3)">
+                        3
+                        <i class="fa-solid fa-star"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-warning" onclick="filterTestimonials(4)">
+                        4
+                        <i class="fa-solid fa-star"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-warning" onclick="filterTestimonials(5)">
+                        5
+                        <i class="fa-solid fa-star"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- card section -->
+            <section class="testimoni" id="testimonials">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="/image/read.jpg" class="card-img-top" alt="testimoni">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">- Ilham Fathullah</p>
+                            </div>
+                          </div>
+                    </div>                
+                </div>
+            </section>
+            <!-- end card testi -->
+        </div>
+    </div>
+    <script src="/js/testimoni.js"></script>
+</body>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</html>

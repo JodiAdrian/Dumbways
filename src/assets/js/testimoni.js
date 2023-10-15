@@ -30,12 +30,26 @@ function showTestimonial() {
 
   dataTestiomonial.forEach(item => {
     testimonialForHtml += `
-      <div class="testimonial">
-        <img src=${item.image} class="profile-testimonial" />
-        <p class="quote">${item.comment}</p>
-        <p class="author">- ${item.name}</p>
-      </div>
+    <div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <img src=${item.image} class="card-img-top" alt="testimoni">
+            <div class="card-body">
+              <p class=${item.comment}</p>
+              <p class="card-text">- ${item.name}</p>
+            </div>
+          </div>
+    </div>                
+</div>
     `
+  // dataTestiomonial.forEach(item => {
+  //   testimonialForHtml += `
+  //     <div class="testimonial">
+  //       <img src=${item.image} class="profile-testimonial" />
+  //       <p class="quote">${item.comment}</p>
+  //       <p class="author">- ${item.name}</p>
+  //     </div>
+  //   `
   })
 
   document.getElementById("testimonials").innerHTML = testimonialForHtml
@@ -55,12 +69,26 @@ function filterTestimonials(rating) {
   } else {
     dataFiltered.forEach(item => {
       testimonialForHtml += `
-        <div class="testimonial">
-          <img src=${item.image} class="profile-testimonial" />
-          <p class="quote">${item.comment}</p>
-          <p class="author">- ${item.name}</p>
-        </div>
+      <div class="row">
+      <div class="col-md-4">
+          <div class="card">
+              <img src=${item.image} class="card-img-top" alt="testimoni">
+              <div class="card-body">
+                <p class=${item.comment}</p>
+                <p class="card-text">- ${item.name}</p>
+              </div>
+            </div>
+      </div>                
+  </div>
       `
+    // dataFiltered.forEach(item => {
+    //   testimonialForHtml += `
+    //     <div class="testimonial">
+    //       <img src=${item.image} class="profile-testimonial" />
+    //       <p class="quote">${item.comment}</p>
+    //       <p class="author">- ${item.name}</p>
+    //     </div>
+    //   `
     })
   }
 

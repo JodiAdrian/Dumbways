@@ -9,7 +9,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous">
         <link rel="stylesheet" href="/css/main.css">
-        <title>Add Project</title>
+        <title>Edit Blogs</title>
     </head>
 
     <body class="bgcolor">
@@ -51,7 +51,7 @@
 
         <!-- ADD PROJECT -->
         <div class="container text-center mt-5 mb-3">
-            <h1>Add New Project</h1>
+            <h1>Edit Project</h1>
         </div>
 
         <div class="container">
@@ -144,56 +144,6 @@
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eadbc8" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,160C384,171,480,245,576,282.7C672,320,768,320,864,288C960,256,1056,192,1152,186.7C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         <!-- END FORM -->
-
-        {{!-- PROJECT --}}
-        <section id="fcard" class="pt-1">
-        <div class="filter pb-1 mt-5">
-            <h1>My Project</h1>
-        </div>
-
-        <div class="text-center mt-5">
-             <a href="/detail" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark" role="button" aria-pressed="true">READ DETAIL</a>
-        </div>
-
-        <!-- FILTERING -->
-        {{!-- <div class="filter">
-            <label for="filter_technology">Filter by technologies:</label>
-            <select
-                name="filter_technology"
-                id="filter_technology"
-                onchange="filterProjectBasedOnTechnology()">
-                <option value="all">All</option>
-                <option value="Node Js">Node JS</option>
-                <option value="Next Js">Next JS</option>
-                <option value="React Js">React JS</option>
-                <option value="Typescript">Typescript</option>
-            </select>
-        </div> --}}
-        <!-- END FILTERING -->
-
-        <!-- CARD -->
-        {{!-- <div class="container col-md-2 mt-5" id="contents">
-            {{#each blogs}}
-            <div class="card container-card md ">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.webp" alt="Card">
-                <div class="card-body">
-                  <h4 class="card-title"><a>{{ this.title }}</a></h4>
-                  <p class="card-text">{{ this.start }} - {{ this.end }}</p>
-                  <p class="card-text">{{ this.content }}</p>
-                    <p class="card-text">Use: {{ this.technologies }}</p>
-                  <a href="#" class="btn btn-primary">Button</a>
-                </div>
-              </div>
-              {{/each}}
-            </div> --}}
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
-              <path
-                  fill="#113946"
-                  fill-opacity="100"
-                  d="M0,224L80,224C160,224,320,224,480,234.7C640,245,800,267,960,256C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-          </svg>
-        </section>
-        <!-- END CARD -->
 
         <!-- FOOTER -->
         <footer class="footer text-white text-center pb-5 pt-5">
